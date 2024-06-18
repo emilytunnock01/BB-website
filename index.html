@@ -1,4 +1,172 @@
- hello world
- testing
- new line
- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        html, body {
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal overflow */
+            height: 100%;
+
+            overflow-x: hidden; /* Prevent horizontal overflow */
+          
+            margin: 0;
+
+        
+            
+        }
+
+        .header {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex; 
+            justify-content: flex-end; 
+            align-items: center; 
+            gap: 20px; 
+            list-style: none;
+            margin: 0; 
+            width: 100%; 
+            z-index: 1001;
+            background: #61ACAF;
+
+            font-family:cursive;
+        }
+
+        .header a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: white;
+        }
+
+        .header a img 
+        {
+        width: 25px; /* Adjust width of social media icons */
+        height: auto; /* Maintain aspect ratio */
+        }
+
+        .header a:hover {
+            background:  #56989b;
+        }
+
+        /* Medium screens */
+        @media all and (max-width: 800px) {
+            .header {
+                justify-content: space-around;
+            }
+        }
+
+        /* Small screens */
+        @media all and (max-width: 500px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 3.5em; /* Ensure there's space for the fixed header */
+        }
+
+
+       
+        .frontpic 
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1; 
+        }
+        
+        .content {
+            position: relative;
+            z-index: 2;
+            background: #f1c272;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30em; /* Create space from the top (adjust as needed) */
+            margin-bottom: 3em; /* Create space from the bottom */
+
+            font-family:cursive;
+            
+        }
+
+
+        .dropdown 
+        {
+        position: relative;
+        display: inline-block;
+        }
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+        .dropdown:hover .dropdown-content 
+        {
+       display: block;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <ul class="header">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://food.google.com/chooseprovider?restaurantId=/g/1tfjm1dd&g2lbs=AOHF13lnjd1JidrDDQbiY_Ag-sesdkET4OxzmMW99WSpGSwv4y5V8B4yW4BUjVnl86ZwIXyC2ED2drE8ft1Y0k5hbDViZG7D0g%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=X8hwZr-RG8OnptQP39qpwAY&ei=X8hwZr-RG8OnptQP39qpwAY&fo_s=OA&opi=89978449&foub=mcpp&sa=X&ved=2ahUKEwj_vMnr5uOGAxXDk4kEHV9tCmgQjYwDKAB6BAgcEAg&sei=CUyfJz0HS124EV_HFwLLGCnE&utm_campaign&utm_source=search">Contact</a></li>
+        <li><a href="https://www.instagram.com/"><img src="instaLogo.webp"></a></li>
+        <li><a href="https://www.facebook.com/"><img src="faceLogo.png" width=25 height=auto></a></li>
+    </ul>
+
+    <img class="frontpic" src="storefront.png">
+
+   
+    <div class="content">
+
+        <h2> Menu </h2>
+
+        <div class="dropdown">
+            <img src="bagelTest.jpg" width=800px height=200px>
+            <div class="dropdown-content">
+            <img src="test.jpg" width=800px height=auto>
+            </div>
+        </div>
+
+        <h1></h1>
+        <h1></h1>
+
+        <div class="dropdown">
+            <img src="bagelTest.jpg" width=800px height=200px>
+            <div class="dropdown-content">
+            <img src="test.jpg" width=800px height=auto>
+            </div>
+        </div>
+
+        <h1></h1>
+        <h1></h1>
+
+        <div class="dropdown">
+            <img src="bagelTest.jpg" width=800px height=200px>
+            <div class="dropdown-content">
+            <img src="test.jpg" width=800px height=auto>
+            </div>
+        </div>
+          
+    </div>
+
+  
+
+</body>
+</html>
