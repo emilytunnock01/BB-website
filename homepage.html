@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> B&B Bagels</title>
+
+    <style type="text/css">
+       
+       html, body{margin:0;
+        padding:0;
+        border:0;
+        height: 100%; 
+        }
+
+        .header {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex; 
+            justify-content: flex-end; 
+            align-items: center; 
+            gap: 15px; 
+            list-style: none;
+            margin: 0; 
+            width: 100%; 
+            z-index: 1001;
+            background: #61ACAF;
+
+        }
+        .header a {
+            text-decoration: none;
+            display: block flow-root;
+            padding-top: 5%;
+            margin-right: 45px;
+            color: white;
+            font-size: large;
+        }
+        
+
+
+
+        #container {
+		min-height:100%;
+		position:relative;
+        background: #f1c272;
+        text-align: center; 
+
+	    }
+        #body{
+            padding:10px;
+            padding-bottom:60px;
+        }
+        #footer {
+        position:relative;
+        bottom:0;
+        width:100%;
+        height:200px;   
+        background:#C44D18;
+        }
+
+        .home-icon {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex; 
+            justify-content: middle; 
+            align-items: center; 
+            gap: 15px; 
+            list-style: none;
+            margin: 0; 
+            width: 100%; 
+            z-index: 1002;
+        
+
+        }
+        
+
+
+
+        .parallax{
+            background: url("storefront.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+        }
+        .parallax-photo{
+           padding-top:75%;
+            padding-bottom: 25%; 
+        }
+
+
+        .dropbtn{
+            border: none;
+            cursor: pointer;
+            background-color: transparent;            
+        }
+        .dropbtn:focus {
+           background-color: transparent;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            min-width: 160px;
+            overflow: auto;
+            z-index: 1;
+        }
+        .show {display: block;}
+        
+
+    </style>
+
+
+</head>
+
+<body>
+  
+
+    <ul class="header">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://food.google.com/chooseprovider?restaurantId=/g/1tfjm1dd&g2lbs=AOHF13lnjd1JidrDDQbiY_Ag-sesdkET4OxzmMW99WSpGSwv4y5V8B4yW4BUjVnl86ZwIXyC2ED2drE8ft1Y0k5hbDViZG7D0g%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&gei=X8hwZr-RG8OnptQP39qpwAY&ei=X8hwZr-RG8OnptQP39qpwAY&fo_s=OA&opi=89978449&foub=mcpp&sa=X&ved=2ahUKEwj_vMnr5uOGAxXDk4kEHV9tCmgQjYwDKAB6BAgcEAg&sei=CUyfJz0HS124EV_HFwLLGCnE&utm_campaign&utm_source=search">Contact</a></li>
+        <li><a href="https://www.instagram.com/"><img src="instaLogo.webp" width=auto height=45px></a></li>
+        <li><a href="https://www.facebook.com/"><img src="faceLogo.png" width=auto height=40px></a></li>
+    </ul>
+
+   <section class = "parallax">
+        <div class="parallax-photo">
+            <br><br>
+        </div>
+   </section>
+
+   <div id="container"> 
+    <div id="body">
+        <h1>MENU</h1> 
+        
+        <div class="dropdown">
+            <button onclick="dropMenu('bagel')" class="dropbtn">
+                <img src="bagelTest.jpg"  width=900px height= 150px class="dropbtn"> 
+            </button>
+            <div id="bagel" class="dropdown-content">
+                <img src="test.jpg" width=800px height=auto>
+            </div>
+
+            <br><br><br>
+
+            <button onclick="dropMenu('sand')" class="dropbtn">
+                <img src="bagelTest.jpg"  width=900px height= 150px class="dropbtn"> 
+            </button>
+            <div id="sand" class="dropdown-content">
+                <img src="test.jpg" width=800px height=auto>
+            </div>
+            
+            <br><br><br>
+
+            <button onclick="dropMenu('egg')" class="dropbtn">
+                <img src="bagelTest.jpg"  width=900px height= 150px class="dropbtn"> 
+            </button>
+            <div id="egg" class="dropdown-content">
+                <img src="test.jpg" width=800px height=auto>
+            </div>
+            
+            <br><br><br>
+
+            <button onclick="dropMenu('tom')" class="dropbtn">
+                <img src="bagelTest.jpg"  width=900px height= 150px class="dropbtn"> 
+            </button>
+            <div id="tom" class="dropdown-content">
+                <img src="test.jpg" width=800px height=auto>
+            </div>
+        </div>
+
+    </div>
+      
+        
+    
+    <div id="footer"> 
+        <img src = "icon.png" height = 125px width = auto style="position: absolute; left: 10px; top: 20%;">
+
+        <div class="footer-icon">
+            <a href="https://www.instagram.com/">
+                <img src="instaLogo.webp" width=auto height=61px
+                style="position: center">
+            </a>
+            
+            <a href="https://www.facebook.com/">
+                <img src="faceLogo.png" width=auto height=55px
+                style="position:center">
+            </a>
+
+            <br><br><br><br>
+            <a href="https://www.google.com/maps/place/B%26B+Hot+Bagels+and+Deli/@40.9280329,-73.8454006,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2f2ab5a698edd:0xe29d37950f809f77!8m2!3d40.9280329!4d-73.8428203!16s%2Fg%2F1tfjm1dd?entry=ttu">
+                <p>847 Bronx River Rd, Yonkers, NY 10708 </p>
+            </a>
+        </div>
+           
+
+        
+    </div>  
+
+
+   
+
+   <script>
+    function dropMenu(dropdownId){
+            var dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle("show");
+        }
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
